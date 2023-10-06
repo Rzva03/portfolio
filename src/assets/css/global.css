@@ -1,0 +1,34 @@
+.p-tabmenu .p-tabmenu-nav {
+    background: #ffffff;
+    border: 1px solid #dee2e6 !important;
+    border-width: 0 0 2px 0 !important;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem {
+    margin-right: 0;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+    border: solid #dee2e6;
+    border-width: 0 0 2px 0 !important;
+    border-color: transparent transparent #dee2e6 transparent !important;
+    background: #ffffff;
+    color: #6c757d !important;
+    padding: 1.25rem;
+    font-weight: 700;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    transition: box-shadow 0.2s;
+    margin: 0 0 -2px 0;
+    height: calc(100% + 2px);
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+    background: #ffffff !important;
+    border-color: #6366F1 !important;
+    color: #6366F1 !important;
+}
+
+.p-button {
+    border: 1px solid #6366F1 !important;
+}
