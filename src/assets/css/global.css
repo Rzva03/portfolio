@@ -25,10 +25,79 @@
 
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
     background: #ffffff !important;
-    border-color: #6366F1 !important;
-    color: #6366F1 !important;
+    border-color: #149eca !important;
+    color: #149eca !important;
+}
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .p-button {
-    border: 1px solid #6366F1 !important;
+    color: #ffffff;
+    background: #149eca;
+    border: 1px solid #149eca;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 6px;
 }
+
+.p-button:enabled:hover, .p-button:not(button):not(a):not(.p-disabled):hover {
+    background: #4F46E5 !important;
+    color: #ffffff !important;
+    border-color: #4F46E5 !important;
+}
+
+.p-button.p-button-outlined:enabled:hover, .p-button.p-button-outlined:not(button):not(a):not(.p-disabled):hover {
+    background: rgba(99, 102, 241, 0.04);
+    color: #149eca;
+    border: 1px solid;
+}
+
+.p-button.p-button-icon-only.p-button-rounded {
+    border-radius: 50%;
+    height: 3rem;
+}
+
+.p-button.p-button-icon-only {
+    width: 3rem;
+    padding: 0.75rem 0;
+}
+
+.p-button.p-button-rounded {
+    border-radius: 2rem;
+}
+
+.p-button.p-button-outlined {
+    background-color: transparent !important;
+    color: #149eca;
+    border: 1px solid;
+}
+
+.p-button:enabled:active, .p-button:not(button):not(a):not(.p-disabled):active {
+    background: #4338CA;
+    color: #ffffff;
+    border-color: #4338CA;
+}
+
+.p-button:enabled:hover, .p-button:not(button):not(a):not(.p-disabled):hover {
+    background: #4F46E5;
+    color: #ffffff;
+    border-color: #4F46E5;
+}
+
+.p-button:focus {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #b1b3f8, 0 1px 2px 0 black;
+}
+
