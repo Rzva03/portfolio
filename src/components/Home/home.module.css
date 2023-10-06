@@ -1,0 +1,10 @@
+.homeProfile svg {
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    .homeProfile svg {
+        width: 100%;
+    }
+    
+}
