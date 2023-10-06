@@ -5,8 +5,14 @@ module.exports = {
     ],
     darkMode: false, // or 'media' or 'class'
     theme: {
-        extend: {},
-    },
+        extend: {
+          colors: {
+            blue: {
+              1000: '#149eca',
+            },
+          }
+        },
+      },
     variants: {},
     plugins: [],
 }
