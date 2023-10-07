@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import useSocialNetwork from './useSocialNetwork';
 import { Button } from 'primereact/button';
 
