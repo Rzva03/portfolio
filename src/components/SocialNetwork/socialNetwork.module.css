@@ -1,0 +1,3 @@
+:global(.socialNetwork .p-button:enabled:hover), :global(.menuMobile .p-button:focus) {
+    color: #ffffff !important;
+}

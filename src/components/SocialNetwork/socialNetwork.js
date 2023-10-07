@@ -1,6 +1,8 @@
 import React from 'react';
 import useSocialNetwork from './useSocialNetwork';
 import { Button } from 'primereact/button';
+// eslint-disable-next-line no-unused-vars
+import defaultStyles from './socialNetwork.module.css';
 
 const SocialNetwork = () => {
     const {
@@ -8,7 +10,7 @@ const SocialNetwork = () => {
     } = useSocialNetwork();
 
     return (
-        <div className='flex space-x-3'>
+        <div className='socialNetwork flex space-x-3'>
             {buttons.map((button) => (
                 <Button
                     icon={button.icon}
