@@ -1,5 +1,17 @@
-:global(.menuMobile .p-button-rounded) {
+:global(.menuMobile .p-button) {
     background: transparent;
     border: 0;
-    color: black;
+}
+
+:global(.menuMobile .p-button:enabled:hover), :global(.menuMobile .p-button:focus) {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.menuDark {
+    color: white !important;
+}
+
+.menuLight, .menuLight:hover {
+    color: #6c757d !important;
 }
