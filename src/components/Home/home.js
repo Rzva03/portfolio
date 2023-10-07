@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import defaultStyles from './home.module.css';
 import { IconDev } from '../Icons/icons';
 import Presentation from '../Presentation/presentation';
