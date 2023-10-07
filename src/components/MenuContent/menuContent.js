@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Logo from '../Logo/logo';
 import { TabMenu } from 'primereact/tabmenu';
 import ToggleTheme from '../ToggleTheme/toggleTheme';
 import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 // eslint-disable-next-line no-unused-vars
 import defaultStyles from './menuContent.module.css';
+import { ThemeContext } from '../../context/ThemeContext';
 
 const MenuContent = (props) => {
     const {
@@ -15,6 +16,9 @@ const MenuContent = (props) => {
     const {
         isMobile
     } = useCheckMobileScreen();
+    const { state } = useContext(ThemeContext);
+    const { theme } = state;
+    const isLightTheme = theme === 'light';
 
     return (
         <div className={`menu flex md:space-x-2 md:justify-between md:items-center ${isMobile ? 'flex-col' : 'flex-row'}`}>
@@ -26,7 +30,7 @@ const MenuContent = (props) => {
                     model={items}
                     activeIndex={activeIndex}
                     onTabChange={(e) => onTabChangeActiveIndex(e)}
-                    className={`${isMobile ? 'menu__tab-menu' : ''}`}
+                    className={`${isMobile ? 'menu__tab-menu' : ''} ${isLightTheme ? 'lightTheme' : 'darkTheme'}`}
                 />
                 {!isMobile ? (
                     <ToggleTheme />
