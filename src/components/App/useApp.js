@@ -14,7 +14,11 @@ const useApp = () => {
     const isLightTheme = theme === 'light';
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const onTabChangeActiveIndex = useCallback((e) => {
+    const onTabChangeActiveIndex = useCallback((e, index = -1) => {
+        if (index >= 0) {
+            setActiveIndex(index);
+            return;
+        }
         setActiveIndex(e.index);
     }, []);
 
