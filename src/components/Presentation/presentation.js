@@ -1,12 +1,16 @@
 import React from 'react';
 import SocialNetwork from '../SocialNetwork/socialNetwork';
 import DownloadCV from '../DownloadCV/downloadCV';
+import usePresentation from './usePresentation';
 
 const Presentation = () => {
+    const {
+        isLightTheme
+    } = usePresentation();
 
     return (
         <div className='flex flex-col justify-center items-center md:items-start space-y-4 font-semibold'>
-            <h1 className='text-gray-800 text-xl uppercase'>Hi there! I'm</h1>
+            <h1 className={`text-xl uppercase ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>Hi there! I'm</h1>
             <h2 className='text-3xl uppercase'>
                 <span className='text-blue-1000'>Victor</span>
                 &nbsp;Rodriguez
