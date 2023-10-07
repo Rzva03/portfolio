@@ -1,0 +1,7 @@
+:global(.menu__tab-menu .p-tabmenu-nav) {
+    flex-direction: column;
+}
+
+:global(.menu__tab-menu .p-tabmenuitem) {
+    margin-top: 0.2rem;
+}
