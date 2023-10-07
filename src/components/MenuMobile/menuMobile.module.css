@@ -1,0 +1,5 @@
+:global(.menuMobile .p-button-rounded) {
+    background: transparent;
+    border: 0;
+    color: black;
+}
