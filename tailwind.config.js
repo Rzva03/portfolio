@@ -10,6 +10,9 @@ module.exports = {
             blue: {
               1000: '#149eca',
             },
+            gray: {
+              1000: '#23272f'
+            }
           }
         },
       },
