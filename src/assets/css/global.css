@@ -24,9 +24,9 @@
 }
 
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
-    background: #ffffff !important;
+    background: #ffffff;
     border-color: #149eca !important;
-    color: #149eca !important;
+    color: #149eca ;
 }
 .p-button {
     margin: 0;
@@ -55,7 +55,7 @@
 
 .p-button:enabled:hover, .p-button:not(button):not(a):not(.p-disabled):hover {
     background: #4F46E5 !important;
-    color: #ffffff !important;
+    color: #ffffff;
     border-color: #4F46E5 !important;
 }
 
@@ -101,3 +101,21 @@
     box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #b1b3f8, 0 1px 2px 0 black;
 }
 
+.darkTheme > * {
+    background-color: #23272f !important;
+    color: white !important;
+}
+
+.darkTheme .p-tabmenu-nav, 
+.darkTheme .p-tabmenuitem,
+.darkTheme .p-menuitem-link,
+.darkTheme .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+    background-color: #23272f !important;
+    color: white;
+}
+
+
+.lightTheme > * {
+    background-color: white;
+    color: #23272f;
+}
