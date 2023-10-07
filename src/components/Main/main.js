@@ -1,6 +1,5 @@
 import React from 'react';
 import Home from '../Home/home';
-import About from '../About/about';
 import Skill from '../Skill/skill';
 import Project from '../Project/project';
 import Contact from '../Contact/contact';
@@ -15,15 +14,12 @@ const Main = (props) => {
                 <Home />
             )}
             {activeIndex === 1 && (
-                <About />
-            )}
-            {activeIndex === 2 && (
                 <Skill />
             )}
-            {activeIndex === 3 && (
+            {activeIndex === 2 && (
                 <Project />
             )}
-            {activeIndex === 4 && (
+            {activeIndex === 3 && (
                 <Contact />
             )}
         </main>
