@@ -2,6 +2,7 @@ import React from 'react';
 import useMenu from './useMenu';
 import MenuMobile from '../MenuMobile/menuMobile';
 import MenuContent from '../MenuContent/menuContent';
+import defaultStyles from './menu.module.css';
 
 const Menu = (props) => {
     const {
@@ -9,7 +10,7 @@ const Menu = (props) => {
     } = useMenu();
 
     return (
-        <nav className=''>
+        <nav className={defaultStyles.nav}>
             {isMobile ? (
                 <MenuMobile  {...props} />
             ) : (

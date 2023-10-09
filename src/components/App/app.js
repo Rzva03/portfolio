@@ -16,7 +16,7 @@ const App = () => {
     } = useApp();
 
     return (
-        <div className={`${defaultStyles.app} ${isLightTheme ? 'bg-white' : 'bg-gray-1000 text-white'} px-5`}>
+        <div className={`${defaultStyles.app} ${isLightTheme ? 'bg-white' : 'bg-gray-1000 text-white'} px-5 w-full h-full`}>
             <Header
                 items={items}
                 activeIndex={activeIndex}

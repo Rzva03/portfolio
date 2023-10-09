@@ -8,10 +8,10 @@
     box-shadow: none !important;
 }
 
-.menuDark {
+.menuDark, .menuDark:hover, .menuDark:focus {
     color: white !important;
 }
 
-.menuLight, .menuLight:hover {
+.menuLight, .menuLight:hover, .menuLight:focus {
     color: #6c757d !important;
 }

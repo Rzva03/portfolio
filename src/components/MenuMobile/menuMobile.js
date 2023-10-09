@@ -23,7 +23,7 @@ const MenuMobile = (props) => {
             </Sidebar>
             <Button
                 icon="pi pi-bars"
-                className={`p-button-rounded p-button-text flex justify-start ${isLightTheme ? defaultStyles.menuLight : defaultStyles.menuDark}`}
+                className={`p-button-rounded p-button-text ${isLightTheme ? defaultStyles.menuLight : defaultStyles.menuDark}`}
                 onClick={() => setIsMenuMobileVisible(true)}
             />
             <ToggleTheme />
