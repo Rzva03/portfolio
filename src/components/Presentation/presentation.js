@@ -11,7 +11,7 @@ const Presentation = () => {
     return (
         <div className='flex flex-col justify-center items-center md:items-start space-y-4 font-semibold'>
             <h1 className={`text-xl uppercase ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>Hi there! I'm</h1>
-            <h2 className='text-3xl uppercase'>
+            <h2 className='text-2xl uppercase'>
                 <span className='text-blue-1000'>Victor</span>
                 &nbsp;Rodriguez
             </h2>

@@ -10,7 +10,7 @@ const Main = (props) => {
         activeIndex
     } = props;
     return (
-        <main className={`flex pt-10 md:pt-0 justify-center md:items-center ${defaultStyles.main}`}>
+        <main className={`flex px-4 md:px-0 md:pt-0 justify-center items-center ${defaultStyles.main}`}>
             {activeIndex === 0 && (
                 <Home />
             )}

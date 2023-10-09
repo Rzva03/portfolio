@@ -9,7 +9,6 @@
     background: rgba(35,39,47,.05) !important;
 }
 
-
 :global(.toggle .p-button.p-togglebutton.p-component) {
     background: transparent !important;
     border: 0 !important;
@@ -42,7 +41,7 @@
     width: 3rem;
     height: 3rem;
     display: flex !important;
-    justify-content: flex-end !important;
+    justify-content: center !important;
     align-items: center;
 }
 
@@ -50,15 +49,10 @@
     padding: 0 !important;
 }
 
-:global(.toggle--mobile:hover) {
-    border-radius: 0 !important;
-    background: transparent !important;
-}
-
 .toggleDark .p-button-icon {
     color: white !important;
 }
 
 .toggleLight .p-button-icon {
-    color: black !important;
+    color: #23272f !important;
 }
