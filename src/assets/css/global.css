@@ -101,19 +101,10 @@
     box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #b1b3f8, 0 1px 2px 0 black;
 }
 
-.darkTheme > * {
+.darkTheme * {
     background-color: #23272f !important;
     color: white !important;
 }
-
-.darkTheme .p-tabmenu-nav, 
-.darkTheme .p-tabmenuitem,
-.darkTheme .p-menuitem-link,
-.darkTheme .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
-    background-color: #23272f !important;
-    color: white;
-}
-
 
 .lightTheme > * {
     background-color: white;
