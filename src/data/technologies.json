@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "React",
+        "url": "https://react.dev/"
+    },
+    {
+        "id": 2,
+        "name": "Tailwind CSS",
+        "url": "https://tailwindcss.com/"
+    },
+    {
+        "id": 3,
+        "name": "PrimeReact",
+        "url": "https://primereact.org/"
+    },
+    {
+        "id": 4,
+        "name": "Figma",
+        "url": "https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1056669374228545696"
+    },
+    {
+        "id": 5,
+        "name": "Webpack",
+        "url": "https://webpack.js.org/"
+    },
+    {
+        "id": 6,
+        "name": "Mysql",
+        "url": "https://www.mysql.com/"
+    },
+    {
+        "id": 7,
+        "name": "GraphQL",
+        "url": "https://graphql.org/"
+    },
+    {
+        "id": 8,
+        "name": "Git",
+        "url": "https://git-scm.com/"
+    }
+]
