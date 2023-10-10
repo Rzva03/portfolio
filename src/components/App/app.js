@@ -10,13 +10,15 @@ import defaultStyles from './app.module.css';
 const App = () => {
     const {
         items,
+        isMobile,
         activeIndex,
+        isAutoHeight,
         isLightTheme,
         onTabChangeActiveIndex
     } = useApp();
 
     return (
-        <div className={`${defaultStyles.app} ${isLightTheme ? 'bg-white' : 'bg-gray-1000 text-white'} md:px-5 w-full h-full`}>
+        <div className={`${defaultStyles.app} ${isLightTheme ? 'bg-white' : 'bg-gray-1000 text-white'} md:px-5 ${isAutoHeight && isMobile ? 'h-auto' : ''}`}>
             <Header
                 items={items}
                 activeIndex={activeIndex}

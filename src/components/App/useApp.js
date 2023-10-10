@@ -1,17 +1,29 @@
-import { useCallback, useContext, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 import { ThemeContext } from '../../context/ThemeContext';
+import useCheckMobileScreen from "../../hooks/useCheckMobileScreen";
+
 const ITEMS = [
     { label: 'Home', icon: 'pi pi-fw pi-home' },
     { label: 'Skills', icon: 'pi pi-fw pi-code' },
     { label: 'Projects', icon: 'pi pi-fw pi-briefcase' },
     { label: 'Contact', icon: 'pi pi-fw pi-phone' }
 ];
+const SKILL_INDEX = 1;
 
 const useApp = () => {
-    const { state } = useContext(ThemeContext);
-    const { theme } = state;
+    const { state, dispatch } = useContext(ThemeContext);
+    const { theme, isAutoHeight } = state;
     const isLightTheme = theme === 'light';
     const [activeIndex, setActiveIndex] = useState(0);
+    const {
+        isMobile
+    } = useCheckMobileScreen();
+
+    useEffect(() => {
+        if (activeIndex === SKILL_INDEX && !isLightTheme) {
+            dispatch({ isAutoHeight: true });
+        }
+    }, [activeIndex, dispatch, isLightTheme]);
 
     const onTabChangeActiveIndex = useCallback((e, index = -1) => {
         if (index >= 0) {
@@ -22,6 +34,8 @@ const useApp = () => {
     }, []);
 
     return {
+        isMobile,
+        isAutoHeight,
         items: ITEMS,
         activeIndex,
         isLightTheme,
