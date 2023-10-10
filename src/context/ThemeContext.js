@@ -3,7 +3,8 @@ import { createContext, useReducer } from "react";
 export const ThemeContext = createContext();
 
 const initialState = {
-    theme: 'light'
+    theme: 'light',
+    isAutoHeight: false
 }
 
 const reducer = (state, newState) => {
