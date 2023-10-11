@@ -8,9 +8,10 @@ const Skill = () => {
         handleOnClick,
         isLightTheme
     } = useSkill();
-
     return (
-        <div className={`h-full home flex flex-col md:justify-center items-center space-y-5 w-full font-semibold ${isLightTheme ? 'lightTheme' : 'darkTheme'}`}>
+        <div
+            className={`h-full flex flex-col md:justify-center items-center space-y-5 w-full font-semibold ${isLightTheme ? 'lightTheme' : 'darkTheme'}`}
+        >
             <h1 className='text-2xl uppercase'>
                 <span className='text-blue-1000'>My</span>
                 &nbsp;Skill
