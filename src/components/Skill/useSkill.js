@@ -3,8 +3,7 @@ import { ThemeContext } from '../../context/ThemeContext';
 
 const useSkill = () => {
     const { state } = useContext(ThemeContext);
-    const { theme } = state;
-    const isLightTheme = theme === 'light';
+    const { isLightTheme } = state;
     const [isLoading, setIsLoading] = useState(true);
 
     const handleOnClick = useCallback((url) => {

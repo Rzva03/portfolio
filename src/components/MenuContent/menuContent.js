@@ -23,8 +23,7 @@ const MenuContent = (props) => {
         setIsMenuMobileVisible
     });
     const { state } = useContext(ThemeContext);
-    const { theme } = state;
-    const isLightTheme = theme === 'light';
+    const { isLightTheme } = state;
 
     return (
         <div className={`menu flex md:space-x-2 md:justify-between md:items-center ${isMobile ? 'flex-col' : 'flex-row'}`}>

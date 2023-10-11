@@ -12,8 +12,7 @@ const SKILL_INDEX = 1;
 
 const useApp = () => {
     const { state, dispatch } = useContext(ThemeContext);
-    const { theme, isAutoHeight } = state;
-    const isLightTheme = theme === 'light';
+    const { isAutoHeight, isLightTheme } = state;
     const [activeIndex, setActiveIndex] = useState(0);
     const {
         isMobile
