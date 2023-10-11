@@ -20,7 +20,7 @@ const ProjectItem = (props) => {
 
     return (
         <Card
-            className={`projectItem w-full md:w-1/5 hover:cursor-pointer projectItem__${id}`}
+            className={`projectItem w-full md:w-1/3 lg:w-1/4 hover:cursor-pointer projectItem__${id}`}
             header={header}
             title={name}
             subTitle={subTitle}
