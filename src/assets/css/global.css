@@ -121,8 +121,17 @@
 
 .p-card.p-component {
     box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.12);
+    position: relative;
 }
 
 .p-card.p-component:hover {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.24);
+}
+
+.p-image-preview-container {
+    position: static;
+}
+
+.p-image-toolbar {
+    color: white;
 }
