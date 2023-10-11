@@ -106,6 +106,14 @@
     color: white !important;
 }
 
+.darkTheme .p-card.p-component {
+    box-shadow: 0 0 0 0.5px rgba(180, 180, 180, 0.2), 0 4px 8px rgba(209, 209, 209, 0.12);
+}
+
+.darkTheme .p-card.p-component:hover {
+    box-shadow: 0 0 0 1px rgba(180, 180, 180, 0.2), 0 8px 16px rgba(209, 209, 209, 0.12);
+}
+
 .lightTheme > * {
     background-color: white;
     color: #23272f;
