@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect, useState } from 'react'
+import { useCallback, useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 
 const useSkill = () => {

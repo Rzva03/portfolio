@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import Logo from '../Logo/logo';
 import { TabMenu } from 'primereact/tabmenu';
 import ToggleTheme from '../ToggleTheme/toggleTheme';

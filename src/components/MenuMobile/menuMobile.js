@@ -1,5 +1,5 @@
 import { Sidebar } from 'primereact/sidebar';
-import React from 'react'
+import React from 'react';
 import MenuContent from '../MenuContent/menuContent';
 import { Button } from 'primereact/button';
 import useMenuMobile from './useMenuMobile';

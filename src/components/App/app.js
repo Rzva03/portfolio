@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Header from '../Header/header';
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
