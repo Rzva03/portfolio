@@ -2,11 +2,13 @@ import React from 'react';
 import technologies from '../../data/technologies.json';
 import Technology from '../Technology/technology';
 import useSkill from './useSkill';
+import SkillSkeleton from './skillSkeleton';
 
 const Skill = () => {
     const {
         handleOnClick,
-        isLightTheme
+        isLightTheme,
+        isLoading
     } = useSkill();
     return (
         <div
@@ -17,13 +19,17 @@ const Skill = () => {
                 &nbsp;Skill
             </h1>
             <div className='flex space-y-6 flex-col md:flex-row md:justify-center md:flex-wrap md:gap-3 md:space-y-0 pb-10 md:pb-0'>
-                {technologies.map((technology => (
-                    <Technology
-                        {...technology}
-                        key={`techCard-${technology.name}`}
-                        handleOnClick={() => handleOnClick(technology.url)}
-                    />
-                )))}
+                {isLoading ? (
+                    <SkillSkeleton />
+                ) : (
+                    technologies.map((technology => (
+                        <Technology
+                            {...technology}
+                            key={`techCard-${technology.name}`}
+                            handleOnClick={() => handleOnClick(technology.url)}
+                        />
+                    )))
+                ) }
             </div>
         </div>
     )
