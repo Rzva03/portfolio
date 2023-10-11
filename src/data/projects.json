@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Tecoatl",
+        "subTitle": "Web system for managing reports of the national tecoatl network."
+    },
+    {
+        "id": 2,
+        "name": "Servicios Externos",
+        "subTitle": "Web system for managing ITVO agreements for the external services area."
+    }
+]
