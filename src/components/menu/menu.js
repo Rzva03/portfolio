@@ -10,7 +10,7 @@ const Menu = (props) => {
     } = useMenu();
 
     return (
-        <nav className={defaultStyles.nav}>
+        <nav className={`${defaultStyles.nav} ${isMobile ? 'sticky left-0 right-0 top-0' : ''}`}>
             {isMobile ? (
                 <MenuMobile  {...props} />
             ) : (
