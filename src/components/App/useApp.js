@@ -9,6 +9,7 @@ const ITEMS = [
     { label: 'Contact', icon: 'pi pi-fw pi-phone' }
 ];
 const SKILL_INDEX = 1;
+const PROJECT_INDEX = 2;
 
 const useApp = () => {
     const { state, dispatch } = useContext(ThemeContext);
@@ -19,7 +20,7 @@ const useApp = () => {
     } = useCheckMobileScreen();
 
     useEffect(() => {
-        if (activeIndex === SKILL_INDEX && !isLightTheme) {
+        if ((activeIndex === SKILL_INDEX || activeIndex === PROJECT_INDEX) && !isLightTheme) {
             dispatch({ isAutoHeight: true });
         }
     }, [activeIndex, dispatch, isLightTheme]);
