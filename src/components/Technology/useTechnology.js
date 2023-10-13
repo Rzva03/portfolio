@@ -3,7 +3,7 @@ import logoReact from "../../assets/img/react.png";
 import logoTailwind from "../../assets/img/tailwind.png";
 import logoPrimeReact from "../../assets/img/primereact.png";
 import logoFigma from "../../assets/img/figma.png";
-import logoWebpack from "../../assets/img/webpack.png";
+import logoFormik from "../../assets/img/formik.png";
 import logoMysql from "../../assets/img/mysql.png";
 import logoGraphql from "../../assets/img/graphql.png";
 import logoGit from "../../assets/img/git.png";
@@ -31,7 +31,7 @@ const useTechnology = () => {
                 )
             case 5:
                 return (
-                    <GetLogo logo={logoWebpack} name={name} />
+                    <GetLogo logo={logoFormik} name={name} />
                 )
             case 6:
                 return (
