@@ -7,10 +7,11 @@ import defaultStyles from './menu.module.css';
 const Menu = (props) => {
     const {
         isMobile,
+        isLightTheme
     } = useMenu();
 
     return (
-        <nav className={`${defaultStyles.nav} ${isMobile ? 'sticky left-0 right-0 top-0' : ''}`}>
+        <nav className={`${defaultStyles.nav} ${isMobile ? 'sticky left-0 right-0 top-0 z-50' : ''} ${isLightTheme ? 'bg-white' : 'bg-gray-1000'}`}>
             {isMobile ? (
                 <MenuMobile  {...props} />
             ) : (
