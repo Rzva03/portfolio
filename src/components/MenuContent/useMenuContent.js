@@ -10,6 +10,7 @@ const useMenuContent = (props) => {
     const handleOnClick = useCallback((e, index = -1) => {
         if (isMobile) {
             setIsMenuMobileVisible(false);
+            window.scrollTo(0, 0);
         }
         if (index >= 0) {
             onTabChangeActiveIndex(e, index);
