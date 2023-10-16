@@ -26,7 +26,7 @@ const MenuContent = (props) => {
     const { isLightTheme } = state;
 
     return (
-        <div className={`menu flex md:space-x-2 md:justify-between md:items-center ${isMobile ? 'flex-col' : 'flex-row'}`}>
+        <div className={`menu flex md:space-x-2 md:justify-between md:items-center ${isMobile ? 'flex-col' : 'flex-row'} md:px-5`}>
             <Logo
                 handleOnClick={(e) => { handleOnClick(e, 0) }}
             />

@@ -15,7 +15,7 @@ const Main = (props) => {
     const { isMobile } = useCheckMobileScreen();
     return (
         <main
-            className={`flex px-4 md:px-0 md:pt-0 justify-center items-center ${defaultStyles.main} ${activeIndex === SKILL_INDEX && isMobile ? 'overflow-scroll' : ''}`}
+            className={`flex px-4 md:px-5 md:pt-0 justify-center items-center ${defaultStyles.main} ${activeIndex === SKILL_INDEX && isMobile ? 'overflow-scroll' : ''}`}
         >
             {activeIndex === 0 && (
                 <Home />
