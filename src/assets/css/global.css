@@ -172,17 +172,18 @@ html {
     border: 1px solid #149eca;
     padding: 0.5rem 0.5rem;
     font-weight: normal;
+    color: #495057 !important;
 }
 
 .p-inputtext:enabled:focus, .p-inputtext:enabled:focus-visible {
     outline: 0 none;
     outline-offset: 0;
-    box-shadow: 0 0 0 2px #149eca;
-    border: 0;
+    box-shadow: inset 0 0 0 1px #149eca, inset 0 0 0 1px #149eca, inset 0 0 0 1px #149eca, inset 0 0 0 1px #149eca !important;
 }
 
 .p-float-label label {
-    margin-top: -0.7rem;
+    top: 1rem;
+    background: linear-gradient(180deg, transparent 50%, white 50%) !important;
 }
 
 .p-float-label input:focus~label,
@@ -193,8 +194,15 @@ html {
 .p-float-label .p-inputwrapper-focus~label,
 .p-float-label .p-inputwrapper-filled~label,
 .p-float-label .p-tooltip-target-wrapper~label {
-    top: 0rem;
-    background-color: white;
+    top: -0.75rem;
+    padding: 2px 4px;
+    margin-left: -4px;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.p-float-label > label {
+    left: 1rem;
 }
 
 .bg-slate-300 {
