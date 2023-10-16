@@ -26,7 +26,7 @@ const InputTextArea = (props) => {
                 <label htmlFor={id} className='font-normal text-sm'>{label}</label>
             </span>
             {meta.error && meta.touched && (
-                <small className={`text-red-700 inline-block text-xs absolute bottom-0 left-0 -mb-3 ${defaultStyles.inputTextArea__error}`}>{meta.error}</small>
+                <small className={`text-red-500 inline-block text-xs absolute bottom-0 left-0 -mb-3 ${defaultStyles.inputTextArea__error}`}>{meta.error}</small>
             )}
         </div>
     );
