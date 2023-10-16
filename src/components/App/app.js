@@ -6,19 +6,20 @@ import "primeicons/primeicons.css";
 import useApp from './useApp';
 import Main from '../Main/main';
 import defaultStyles from './app.module.css';
+import Footer from '../Footer/footer';
 
 const App = () => {
     const {
         items,
         isMobile,
         activeIndex,
-        isAutoHeight,
+        isHomePage,
         isLightTheme,
         onTabChangeActiveIndex
     } = useApp();
 
     return (
-        <div className={`${defaultStyles.app} ${isLightTheme ? 'bg-white' : 'bg-gray-1000 text-white'} md:px-5 ${isAutoHeight && isMobile ? 'h-auto' : ''}`}>
+        <div className={`${defaultStyles.app} ${isLightTheme ? 'bg-white' : 'bg-gray-1000 text-white'} ${isMobile && !isHomePage ? 'h-auto' : ''}`}>
             <Header
                 items={items}
                 activeIndex={activeIndex}
@@ -27,6 +28,7 @@ const App = () => {
             <Main
                 activeIndex={activeIndex}
             />
+            <Footer />
         </div>
     )
 }
