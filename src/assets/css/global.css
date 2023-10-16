@@ -95,6 +95,12 @@
     border-color: #4338CA;
 }
 
+.p-button:disabled {
+    color: #1C1B1F;
+    border: 0;
+    background: #E6E1E5 !important;
+}
+
 .p-button:enabled:hover,
 .p-button:not(button):not(a):not(.p-disabled):hover {
     background: #4F46E5;
