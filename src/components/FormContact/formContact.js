@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button } from 'primereact/button';
 import { Form, Formik } from 'formik';
 import useFormContact from './useFormContact';
 import InputText from '../FormComponent/InputText/inputText';
 import InputTextArea from '../FormComponent/InputTextArea/inputTextArea';
 import defaultStyles from './formContact.module.css';
+import { ThemeContext } from '../../context/ThemeContext';
 
 const INITIAL_VALUES = {
     name: '',
@@ -26,6 +27,10 @@ const FormContact = () => {
         validationShema
     } = useFormContact();
 
+    const { state } = useContext(ThemeContext);
+    const { isLightTheme } = state;
+
+
     return (
         <Formik
             initialValues={INITIAL_VALUES}
@@ -36,7 +41,7 @@ const FormContact = () => {
                 resetForm();
             }}
         >
-            <Form className='flex flex-col space-y-3 w-full md:w-1/3 lg:w-1/4' ref={form}>
+            <Form className={`flex flex-col space-y-3 w-full md:w-1/3 lg:w-1/4 ${!isLightTheme ? 'formContact--dark' : ''}`} ref={form}>
                 <InputText id='name' name='name' className='w-full' label={LABELS.name} />
                 <InputText id='email' name='email' className='w-full' label={LABELS.email} />
                 <InputTextArea rows={3} className='w-full' cols={23} name='message' id='message' label={LABELS.message} />

@@ -1,3 +1,20 @@
 .formContact__submit {
     margin-top: 1.5rem !important;
 }
+
+:global(.formContact--dark .p-inputtext.p-component) {
+    background: #23272f;
+    color: white !important;
+    border-color: white !important;
+}
+
+:global(.formContact--dark .p-float-label label) {
+    background: linear-gradient(180deg, transparent 50%, #23272f 50%) !important;
+    color: white;
+}
+
+:global(.formContact--dark .p-inputtext:enabled:focus, .formContact--dark .p-inputtext:enabled:focus) {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: inset 0 0 0 1px white, inset 0 0 0 1px white, inset 0 0 0 1px white, inset 0 0 0 1px white !important;
+}
