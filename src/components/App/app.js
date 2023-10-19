@@ -6,7 +6,6 @@ import "primeicons/primeicons.css";
 import useApp from './useApp';
 import Main from '../Main/main';
 import defaultStyles from './app.module.css';
-import Footer from '../Footer/footer';
 
 const App = () => {
     const {
@@ -28,7 +27,6 @@ const App = () => {
             <Main
                 activeIndex={activeIndex}
             />
-            <Footer />
         </div>
     )
 }
