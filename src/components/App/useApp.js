@@ -12,6 +12,8 @@ const ITEMS = [
 const HOME_INDEX = 0;
 const SKILL_INDEX = 1;
 const PROJECT_INDEX = 2;
+const CONTACT_INDEX = 3;
+
 
 const useApp = () => {
     const { state, dispatch } = useContext(ThemeContext);
@@ -38,7 +40,7 @@ const useApp = () => {
     }, [activeIndex, dispatch, isLightTheme]);
 
     useEffect(() => {
-        if (activeIndex === HOME_INDEX) {
+        if (activeIndex === HOME_INDEX || activeIndex === CONTACT_INDEX) {
             setIsHomePage(true);
             return;
         }
