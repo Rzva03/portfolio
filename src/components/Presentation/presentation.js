@@ -1,6 +1,5 @@
 import React from 'react';
 import SocialNetwork from '../SocialNetwork/socialNetwork';
-import DownloadCV from '../DownloadCV/downloadCV';
 import Title from '../Title/title';
 
 const Presentation = () => {
@@ -14,7 +13,6 @@ const Presentation = () => {
                 &nbsp;passionate about creating interative applications and experiencies on the web.
             </p>
             <div className='flex space-x-10'>
-                <DownloadCV />
                 <SocialNetwork />
             </div>
         </div>
